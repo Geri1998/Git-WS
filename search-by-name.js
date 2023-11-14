@@ -14,6 +14,11 @@ const catNames = ['Cirmi', 'Cirmos', 'Vakarcs', 'Butyok', 'Bubu']
 function main(keyword) {
     console.log('keyword:', keyword)
     // Tip: string.prototype.includes()
+    const result = catNames.filter((catName) => {
+        return catName.includes(keyword)
+    }).join('\n')
+    console.log(result)
+
 }
 
 main(process.argv[2])
