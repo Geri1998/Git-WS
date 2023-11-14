@@ -6,16 +6,18 @@
 //  1. Cat
 //  2. Dog
 //  ...
-
-
 const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
 
-function main() {
-  const toPrint = pets.map((pet, index) => {
-    return `${index + 1}. ${pet}`
-  }).join('\n')
+function createPetList() {
+  let counter = 0
+  for (const pet of pets) {
+    counter++
+    console.log(counter + '. ' + pet)
+  }
+}
 
-  console.log(toPrint)
+function main() {
+  createPetList()
 }
 
 main()
