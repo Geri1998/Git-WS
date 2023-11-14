@@ -6,11 +6,20 @@
 //  1. Cat
 //  2. Dog
 //  ...
-
-
 const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
 
+function createPetList() {
+  let counter = 0
+  for (const pet of pets) {
+    counter++
+    console.log(counter + '. ' + pet)
+  }
+}
+
+
+
 function main() {
+  createPetList()
 }
 
 main()
