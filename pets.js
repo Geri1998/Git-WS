@@ -16,8 +16,6 @@ function createPetList() {
   }
 }
 
-
-
 function main() {
   createPetList()
 }
