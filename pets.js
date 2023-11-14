@@ -11,6 +11,11 @@
 const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
 
 function main() {
+  const toPrint = pets.map((pet, index) => {
+    return `${index}. ${pet}`
+  }).join('\n')
+
+  console.log(toPrint)
 }
 
 main()
